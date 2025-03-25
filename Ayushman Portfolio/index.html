@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ayushman</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Ayushman</div>
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Hey, I'm <span>Ayushman Mishra</span></h1>
+                <h2 class="typewriter">I am a <span></span></h2>
+                <p>Hyyy, I’m Ayushman Mishra, pursuing BCA at Imperial College, Bargarh. I’m interested in IT, Banking, and Finance. Honestly, I’m a bit lazy, but once I take responsibility, I complete the task with full dedication.</p>
+                <div class="social-links">
+                    <a href="#" id="loo"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" id="loo"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" id="loo"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" id="loo"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#contact" class="cta">Contact Me</a>
+
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="main.png" alt="Profile Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="content">
+            <h2>About Me</h2>
+            <p> 
+
+                I am an aspiring software developer with a strong passion for technology and problem-solving. Currently pursuing BCA at Imperial College, Bargarh, I am dedicated to expanding my knowledge in web development, programming, and database management.  
+                
+                I enjoy working on challenging projects that push my limits and help me grow as a developer. My key areas of interest include backend development, cloud computing, and software engineering, and I am always eager to learn new technologies to stay ahead in the field.  
+                
+                Beyond coding, I have a deep interest in banking and finance, exploring how technology transforms these industries. My goal is to contribute to innovative solutions that make a real impact.  
+                
+                I am self-motivated, detail-oriented, and a continuous learner. Whether it's building applications, solving coding challenges, or participating in hackathons, I strive to improve every day. Let's connect and collaborate on exciting opportunities! 🚀</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="content">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">C, C++, Java, Python</div>
+                <div class="skill">HTML, CSS, JavaScript</div>
+                <div class="skill">React, Node.js</div>
+                <div class="skill">MySQL, MongoDB</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="content">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio website built using HTML, CSS, and JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="content">
+            <h2>Contact</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".links").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
